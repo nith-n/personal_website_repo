@@ -1,0 +1,8 @@
+Assignment – 1: Planning
+
+Being a student with a major in applied computer science, I’m going to take my career in the direction of beign a programmer. 
+Therefore, I’m going to use this website in the future as a portfolio website to advertise the achievements I’ve made in my programming journey. 
+The website will be categorised into various divisions such as academic achievements, personal projects, work experience etc. 
+I want the website to be extremely modern, truly pushing the limits of what I can do in web development. 
+Plenty of dynamic elements will be included in the website to make it as versatile and visually striking as possible. 
+It should be convenient for me to update my information so that the website can be up to date on all my accomplishments.
