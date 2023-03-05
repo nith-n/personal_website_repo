@@ -1,3 +1,66 @@
 * {
-    font-family: Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+#gridContainer {
+    display: grid;
+}
+
+#headerNav {
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+
+#logo img {
+    float: left;
+    height: 70px;
+    width: auto;
+}
+
+#navLinks {
+    float: right;
+    margin-right: 20px;
+}
+
+#navLinks ul li {
+    list-style: none;
+    margin: 0 20px;
+    display: inline-block;
+    line-height: 70px;
+}
+
+#navLinks ul li a {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+#fold img {
+    background-size: cover;
+    background: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#fold h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    font-style: italic;
+}
+
+#aboutMeSection {
+    width: 100%;
+
 }
