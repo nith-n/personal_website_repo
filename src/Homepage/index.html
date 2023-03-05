@@ -8,42 +8,33 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body>
+<body id="gridContainer">
     <!--Code Section #1-->
     <header>
-        <a href="index.html"><img width="50" height="50" src="../Website_logo.png" alt="The website's logo"></a>
         <nav id="headerNav">
-            <a href="#about">About</a>
-            <a href="../Projects/projects.html">Projects</a>
-            <a href="../Contact/contact.html">Contact</a>
+            <a id="logo" href="index.html"><img src="../Website_logo.png" alt="The website's logo"></a>
+            <section id="navLinks">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="../Projects/projects.html">Projects</a></li>
+                    <li><a href="../Contact/contact.html">Contact</a></li>
+                </ul>
+            </section>
         </nav>
     </header>
     <main>
         <!--Code Section #2-->
         <section id="fold">
-            <img width="1000" height="500" src="Upper_fold.jpg" alt="Abstract view of architecture">
+            <img src="Upper_fold.jpg" alt="Abstract view of architecture">
             <h1>Hey, I'm Nithin Nedumparambil</h1>
         </section>
         <!--Code Section #3-->
         <article id="aboutMeSection">
             <h2 id="about">About.</h2>
-            <p>Second-year Applied Computer Science student with a minor in Economics.<br>
+            <p id="aboutInfo">Second-year Applied Computer Science student with a minor in Economics.<br>
                 A critical problem solver with an avid interest in all things programming.<br>
                 Thrives in a team environment while exhibiting unmatched dedication and diligence when it comes to
                 working individually.</p>
-            <ul>
-                <li>
-                    <h3>Education:</h3>
-                    <span>Dalhousie University - Bachelors of Applied Computer Science</span>
-                    <br>
-                </li>
-                <li>
-                    <h3>Work Experience:</h3>
-                    <ol>
-                        <li>Five Fishermen Restaurant and Grill - Line Cook</li>
-                    </ol>
-                </li>
-            </ul>
         </article>
     </main>
     <!--Code Section #4-->
@@ -52,12 +43,6 @@
             <a href="#about">About</a>
             <a href="../Projects/projects.html">Projects</a>
             <a href="../Contact/contact.html">Contact</a>
-            <section id="socialMediaButtons">
-                <a href="https://www.linkedin.com/in/nithin-nedumparambil-370641230/"><img width="20" height="20"
-                        src="../LinkedIn_logo.png" alt="LinkedIn logo"></a>
-                <a href="https://github.com/nith-n"><img width="20" height="20" src="../GitHub_logo.png"
-                        alt="GitHub logo"></a>
-            </section>
         </nav>
     </footer>
 </body>
