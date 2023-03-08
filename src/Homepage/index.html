@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body id="gridContainer">
+<body id="flexContainer">
     <!--Code Section #1-->
     <header>
         <nav id="headerNav">
@@ -29,21 +29,45 @@
             <h1>Hey, I'm Nithin Nedumparambil</h1>
         </section>
         <!--Code Section #3-->
-        <article id="aboutMeSection">
+        <section id="aboutMeSection">
             <h2 id="about">About.</h2>
-            <p id="aboutInfo">Second-year Applied Computer Science student with a minor in Economics.<br>
-                A critical problem solver with an avid interest in all things programming.<br>
-                Thrives in a team environment while exhibiting unmatched dedication and diligence when it comes to
-                working individually.</p>
-        </article>
+            <div id="aboutInfo">
+                <img src="Coding.jpg" alt="Picture of a laptop and montior with code.">
+                <div id="aboutWritten">
+                    <p>Second-year Applied Computer Science student with a minor in Economics.<br>
+                        A critical problem solver with an avid interest in all things programming.<br>
+                        Thrives in a team environment while exhibiting unmatched dedication and diligence when it comes
+                        to
+                        working individually.</p>
+                    <br>
+                    <ul>
+                        <li>
+                            <h3>Education:</h3>
+                            <span>Dalhousie University - Bachelors of Applied Computer Science</span>
+                        </li>
+                        <br>
+                        <li>
+                            <h3>Work Experience:</h3>
+                            <ol>
+                                <li>Five Fishermen Restaurant and Grill - Line Cook</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
     <!--Code Section #4-->
     <footer>
-        <nav id="footerNav">
-            <a href="#about">About</a>
-            <a href="../Projects/projects.html">Projects</a>
-            <a href="../Contact/contact.html">Contact</a>
-        </nav>
+        <section id="footerLinks">
+            <nav id="footerNav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="../Projects/projects.html">Projects</a></li>
+                    <li><a href="../Contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
     </footer>
 </body>
 

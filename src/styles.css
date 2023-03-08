@@ -4,15 +4,12 @@
     font-family: Verdana, sans-serif;
 }
 
-#gridContainer {
-    display: grid;
-}
-
 #headerNav {
     background-color: black;
     width: 100%;
     height: 70px;
     position: relative;
+    flex: 1 1 10%;
 }
 
 #logo img {
@@ -45,6 +42,10 @@
     background: no-repeat;
     height: 100vh;
     width: 100%;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+    filter: brightness(40%);
 }
 
 #fold h1 {
@@ -62,5 +63,83 @@
 
 #aboutMeSection {
     width: 100%;
+    height: 100vh;
+    flex: 1 1 40%;
+    display: grid;
+    grid-template-rows: 20% auto;
+}
 
+#aboutMeSection h2 {
+    font-size: 70px;
+    padding-left: 150px;
+    padding-top: 70px;
+}
+
+#aboutInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+#aboutInfo img {
+    flex: 1 1 40%;
+    padding-left: 250px;
+    padding-top: 80px;
+    height: 400px;
+    width: auto;
+}
+
+#aboutWritten {
+    flex: 1 1 60%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutWritten p {
+    flex: 1 1 30%;
+}
+
+#aboutWritten ul {
+    list-style: none;
+    flex: 1 1 70%;
+}
+
+#aboutwritten ol li {
+    list-style: none;
+}
+
+#flexContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#fold {
+    flex: 1 1 40%;
+}
+
+#footerNav {
+    background-color: black;
+    width: 98.9vw;
+    height: 50px;
+    position: relative;
+    flex: 1 1 10%;
+}
+
+#footerLinks {
+    float: left;
+    margin-right: 20px;
+}
+
+#footerLinks ul li {
+    list-style: none;
+    margin: 0 20px;
+    display: inline-block;
+    line-height: 50px;
+}
+
+#footerLinks ul li a {
+    text-decoration: none;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
 }
