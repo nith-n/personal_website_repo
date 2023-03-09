@@ -1,3 +1,6 @@
+/*Code Section #1*/
+
+/*universal selector*/
 * {
     padding: 0;
     margin: 0;
@@ -12,10 +15,15 @@
     flex: 1 1 10%;
 }
 
-#logo img {
+/*child selector*/
+/*Image element stylised with padding, border and margin*/
+#logo>img {
     float: left;
     height: 70px;
     width: auto;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
 }
 
 #navLinks {
@@ -23,32 +31,104 @@
     margin-right: 20px;
 }
 
-#navLinks ul li {
+/*child selector*/
+#navLinks>ul>li {
     list-style: none;
     margin: 0 20px;
     display: inline-block;
     line-height: 70px;
 }
 
-#navLinks ul li a {
+/*child selector*/
+#navLinks>ul>li>a {
     text-decoration: none;
     font-size: larger;
     color: white;
     font-weight: bold;
 }
 
-#fold img {
+/*child selector*/
+#navLinks>ul>li>a:hover {
+    color: gray;
+}
+
+#footerNav {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    flex: 1 1 10%;
+}
+
+#footerLinks {
+    float: left;
+    margin-right: 20px;
+}
+
+/*child selector*/
+#footerLinks>ul>li {
+    list-style: none;
+    margin: 0 20px;
+    display: inline-block;
+    line-height: 50px;
+}
+
+/*child selector*/
+#footerLinks>ul>li>a {
+    text-decoration: none;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+}
+
+/*child selector*/
+#footerLinks>ul>li>a:hover {
+    color: gray;
+}
+
+#footerMessage {
+    text-decoration: none;
+    font-size: small;
+    color: rgb(122, 122, 122);
+    float: right;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 70px;
+    padding-left: 150px;
+    padding-top: 70px;
+}
+
+/*CODE SECTION #2*/
+
+/*flexbox element*/
+#flexContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/*attribute selector*/
+section[id="fold"] {
+    flex: 1 1 40%;
+}
+
+/*child selector*/
+/*Image element stylised with padding, border and margin*/
+#fold>img {
     background-size: cover;
     background: no-repeat;
     height: 100vh;
     width: 100%;
-    padding: 0%;
-    margin: 0%;
+    padding: 0px;
+    margin: 0px;
     border: 0px;
     filter: brightness(40%);
 }
 
-#fold h1 {
+/*child selector*/
+#fold>span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,6 +141,12 @@
     font-style: italic;
 }
 
+/*pseudo element selector*/
+#fold>span::selection {
+    background-color: black;
+}
+
+/*This section uses grid to structure*/
 #aboutMeSection {
     width: 100%;
     height: 100vh;
@@ -69,18 +155,15 @@
     grid-template-rows: 20% auto;
 }
 
-#aboutMeSection h2 {
-    font-size: 70px;
-    padding-left: 150px;
-    padding-top: 70px;
-}
+
 
 #aboutInfo {
     display: flex;
     flex-direction: row;
 }
 
-#aboutInfo img {
+/*child selector*/
+#aboutInfo>img {
     flex: 1 1 40%;
     padding-left: 250px;
     padding-top: 80px;
@@ -95,51 +178,88 @@
     flex-direction: column;
 }
 
-#aboutWritten p {
+/*child selector*/
+#aboutWritten>p {
     flex: 1 1 30%;
 }
 
-#aboutWritten ul {
+/*child selector*/
+#aboutWritten>ul {
     list-style: none;
     flex: 1 1 70%;
 }
 
+/*child selector*/
 #aboutwritten ol li {
     list-style: none;
 }
 
-#flexContainer {
+/*Code Section #3*/
+
+/*multiple selector*/
+#projects,
+#contact {
+    height: 100vh;
+}
+
+#project1 {
+    display: flex;
+    flex-direction: row;
+}
+
+/*child selector*/
+#project1>h2 {
+    flex: 1 1 20%;
+    font-size: 30px;
+    padding-left: 250px;
+    padding-top: 100px;
+}
+
+/*adjacent sibling selector*/
+#project1>h2+p {
+    flex: 1 1 80%;
+    padding-top: 50px;
+    padding-right: 200px;
+}
+
+/*CODE SECTION #4*/
+#contactContent {
+    display: flex;
+    flex-direction: row;
+}
+
+#contactContentLeft {
     display: flex;
     flex-direction: column;
-}
-
-#fold {
     flex: 1 1 40%;
+    padding: 100px 300px;
 }
 
-#footerNav {
-    background-color: black;
-    width: 98.9vw;
-    height: 50px;
-    position: relative;
-    flex: 1 1 10%;
+/*child selector*/
+#contactContentLeft>table {
+    flex: 1 1 50%;
 }
 
-#footerLinks {
-    float: left;
-    margin-right: 20px;
-}
-
-#footerLinks ul li {
-    list-style: none;
-    margin: 0 20px;
-    display: inline-block;
-    line-height: 50px;
-}
-
-#footerLinks ul li a {
+/*sibling selector*/
+th~td>a {
     text-decoration: none;
-    font-size: medium;
-    color: white;
-    font-weight: bold;
+    color: black;
+}
+
+/*child selector*/
+#contactContentLeft>form {
+    padding-top: 100px;
+    flex: 1 1 50%;
+}
+
+/*child selector*/
+/*Image element stylised with padding, border and margin*/
+#contactContent>img {
+    flex: 1 1 60%;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    margin: 0px;
+    border: 0px;
+    height: 500px;
+    width: 200px;
 }
